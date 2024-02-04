@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="">
+		<!--[if lt IE 9]>
+		<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="">
+	</head>
+	<body>
+		<h1>カルノー図</h1>
+		<div>
+			<p>
+				真理値表を元にカルノー図を用いて簡略化した論理式を生成します。
+			</p>
+			<p>
+				最初に入力数を2個～6個の中から選択します。
+				出力数は1～99まで指定できます(変更すると真理値表以下は初期化されるので注意)。
+			</p>
+			<p>
+				真理値表のテーブルは出力部分のセルをクリックすると0⇔1を交互に変換できます。
+				[結果]ボタンを押すと真理値表を満たす簡略化した論理式が出力されます。[結果(not)]はnot側の結果です。
+				乗法ではなく加法の形式で結果表示されます。
+			</p>
+			<p>
+				※デフォルトは7セグメントデコーダ(0～9,A,b,C,d,E,F)の真理値表になっています。
+			</p>
+		</div>
+		<hr>
+		<div id="main"></div>
+		<!-- Place your content here -->
+		<!-- SCRIPTS -->
+		<!-- Example: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="js/truthtable.js"></script>
+		<script src="js/start.js"></script>
+	</body>
+</html>
